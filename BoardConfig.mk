@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/motorola/hanoip
+DEVICE_PATH := device/motorola/penang
 
 # Architecture
 TARGET_ARCH := arm64
@@ -43,9 +43,7 @@ ENABLE_SCHEDBOOST := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sm6150
-TARGET_NO_BOOTLOADER := true
-TARGET_USES_UEFI := true
+TARGET_BOOTLOADER_BOARD_NAME := holi
 
 # RULES
 BUILD_BROKEN_DUP_RULES := true
@@ -64,7 +62,7 @@ BOARD_RAMDISK_OFFSET       := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET   := 0x00000100
 BOARD_DTB_OFFSET           := 0x01f00000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
