@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := hanoip
+PRODUCT_RELEASE_NAME := penang
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
@@ -24,7 +24,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_DEVICE)
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := hanoip
+PRODUCT_MODEL := penang
 PRODUCT_MANUFACTURER := motorola
 
 # Inherit from hardware-specific part of the product configuration
